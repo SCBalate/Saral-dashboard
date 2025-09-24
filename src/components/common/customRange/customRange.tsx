@@ -1,5 +1,5 @@
 import React from "react";
-import "./CustomRange.css";
+import "./customRange.css";
 
 interface CustomRangeProps {
   value: number;
