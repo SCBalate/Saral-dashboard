@@ -1,0 +1,64 @@
+/* Custom track */
+.custom-range::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #efe6fc;
+    border-radius: 9999px;
+  }
+  .custom-range::-moz-range-track {
+    height: 5px;
+    background:  #efe6fc;
+    border-radius: 9999px;
+  }
+  
+  /* Custom thumb (pointer) */
+  /* Reset default appearance */
+.custom-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 9999px;
+  }
+  
+  /* Custom thumb */
+  .custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border: 2px solid #7f38e9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: -7px; /* center thumb vertically */
+  }
+  
+  .custom-range::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border: 2px solid #7f38e9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  
+  /* Hover + active effects */
+  .custom-range::-webkit-slider-thumb:hover,
+  .custom-range::-moz-range-thumb:hover {
+    background: #a855f7;
+  }
+  
+  .custom-range::-webkit-slider-thumb:active,
+  .custom-range::-moz-range-thumb:active {
+    transform: scale(1.1);
+  }
+  
+  /* Optional focus ring */
+  .custom-range:focus {
+    outline: none;
+  }
+  
